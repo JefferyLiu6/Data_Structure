@@ -11,3 +11,7 @@ class HashTable:
     def insert(self, key, value):
         """Insert a key-value pair into the hash table."""
         index = self._hash_function(key)
+        for pair in self.table[index]:
+            if pair[0] == key:
+                pair[1] = value  # Update value if key already exists
+                return
