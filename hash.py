@@ -30,3 +30,13 @@ class HashTable:
             if pair[0] == key:
                 self.table[index].remove(pair)
                 return
+
+
+# Example usage
+hash_table = HashTable(size=5)
+
+# Insert key-value pairs
+hash_table.insert("Alice", "123-456-7890")
+hash_table.insert("Bob", "987-654-3210")
+hash_table.insert("Charlie", "555-555-5555")
+hash_table.insert("Diana", "444-444-4444")
