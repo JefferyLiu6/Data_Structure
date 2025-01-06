@@ -15,3 +15,4 @@ class HashTable:
             if pair[0] == key:
                 pair[1] = value  # Update value if key already exists
                 return
+        self.table[index].append([key, value])  # Append the new key-value pair
