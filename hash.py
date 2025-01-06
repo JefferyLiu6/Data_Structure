@@ -16,3 +16,10 @@ class HashTable:
                 pair[1] = value  # Update value if key already exists
                 return
         self.table[index].append([key, value])  # Append the new key-value pair
+
+    def get(self, key):
+        index = self.hash_function(key)
+        for pair in self.table[index]:
+            if pair[0] == key:
+                return pair[1]
+        return None  # Key not found
