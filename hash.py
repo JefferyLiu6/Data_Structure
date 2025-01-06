@@ -7,3 +7,7 @@ class HashTable:
     def _hash_function(self, key):
         """Hash function to calculate the index for a given key."""
         return hash(key) % self.size
+        
+    def insert(self, key, value):
+        """Insert a key-value pair into the hash table."""
+        index = self._hash_function(key)
