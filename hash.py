@@ -23,3 +23,10 @@ class HashTable:
             if pair[0] == key:
                 return pair[1]
         return None  # Key not found
+
+    def delete(self, key):
+        index = self.hash_function(key)
+        for pair in self.table[index]:
+            if pair[0] == key:
+                self.table[index].remove(pair)
+                return
