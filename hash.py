@@ -40,3 +40,12 @@ hash_table.insert("Alice", "123-456-7890")
 hash_table.insert("Bob", "987-654-3210")
 hash_table.insert("Charlie", "555-555-5555")
 hash_table.insert("Diana", "444-444-4444")
+
+
+# Retrieve values
+print(hash_table.get("Alice"))    # Output: 123-456-7890
+print(hash_table.get("Charlie"))  # Output: 555-555-5555
+
+# Delete a key
+hash_table.delete("Bob")
+print(hash_table.get("Bob"))      # Output: None
