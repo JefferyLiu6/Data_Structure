@@ -24,7 +24,7 @@ class HashTable:
                 return pair[1]
         return None  # Key not found
 
-    def delete(self, key)
+    def delete(self, key):
         index = self.hash_function(key)
         for pair in self.table[index]:
             if pair[0] == key:
